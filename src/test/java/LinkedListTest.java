@@ -28,9 +28,10 @@ public class LinkedListTest {
         Assertions.assertEquals(5, test);
     }
 
-//    @Test
-//    void whenAddElementSizeShouldBeIncreased() {
-//        list.add(10);
-//    }
+    @Test
+    void whenAddElementSizeShouldBeIncreased() {
+        list.add(10);
+        Assertions.assertEquals(11, list.size());
+    }
 
 }

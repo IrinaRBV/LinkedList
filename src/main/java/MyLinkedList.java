@@ -82,7 +82,12 @@ public class MyLinkedList implements LinkedListInterface{
         throw new IndexOutOfBoundsException();
     }
 
- @Override
+    @Override
+    public int size() {
+        return size;
+    }
+
+    @Override
     public String toString() {
         int[] array = new int[size];
         Node step = head;
