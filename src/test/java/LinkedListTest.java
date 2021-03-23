@@ -34,4 +34,10 @@ public class LinkedListTest {
         Assertions.assertEquals(11, list.size());
     }
 
+    @Test
+    void whenRemoveByElementSizeShouldBeDecreased() {
+        Assertions.assertTrue(list.remove(5));
+        Assertions.assertEquals(9, list.size());
+    }
+
 }
