@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        MyLinkedList myLinkedList = new MyLinkedList();
+        LinkedListInterface myLinkedList = new MyLinkedList();
 
         myLinkedList.add(5);
         myLinkedList.add(10);
