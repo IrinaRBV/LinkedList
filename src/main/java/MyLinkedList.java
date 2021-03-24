@@ -55,7 +55,7 @@ public class MyLinkedList implements LinkedListInterface{
                 currentIndex++;
             }
         }
-        throw new IndexOutOfBoundsException();
+        throw new IndexOutOfBoundsException("Index " + index + "not found");
     }
 
     public boolean remove(int index) {
@@ -79,7 +79,7 @@ public class MyLinkedList implements LinkedListInterface{
             }
         }
 
-        throw new IndexOutOfBoundsException();
+        throw new IndexOutOfBoundsException("Index " + index + "not found");
     }
 
     @Override
