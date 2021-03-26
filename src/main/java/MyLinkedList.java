@@ -55,7 +55,8 @@ public class MyLinkedList implements LinkedListInterface{
                 currentIndex++;
             }
         }
-        throw new IndexOutOfBoundsException();
+        String textError = String.format("Index %d not found", index);
+        throw new IndexOutOfBoundsException(textError);
     }
 
     public boolean remove(int index) {
@@ -78,11 +79,16 @@ public class MyLinkedList implements LinkedListInterface{
                 currentIndex++;
             }
         }
-
-        throw new IndexOutOfBoundsException();
+        String textError = String.format("Index %d not found", index);
+        throw new IndexOutOfBoundsException(textError);
     }
 
- @Override
+    @Override
+    public int size() {
+        return size;
+    }
+
+    @Override
     public String toString() {
         int[] array = new int[size];
         Node step = head;
